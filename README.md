@@ -8,7 +8,9 @@ Your task is to write a Swift command-line tool that:
 - Prints each group of anagrams as an array of words, one group per line.
 
 Example:
+
 Input:
+
 listen silent dog god cat act
 Output:
 ["listen", "silent"]
