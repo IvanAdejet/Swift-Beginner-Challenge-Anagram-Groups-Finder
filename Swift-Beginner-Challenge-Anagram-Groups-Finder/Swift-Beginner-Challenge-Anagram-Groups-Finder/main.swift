@@ -15,16 +15,14 @@ var valueGroups: [String: String] = [:]
 //print(wordsSeparated!)
 
 for word in wordsInput!.split(separator: " ") {
-    //wordsSeparated[String(word.sorted()), default: []].append(String(word))//String(word)] += String(word)
     wordsSeparated[String(word)] = String(word.sorted())
 }
 
 for (key, value) in wordsSeparated {
-    //valueGroups[value, default: key] += (", \(key)")
-    valueGroups[value] = key
+    valueGroups[value, default: key] += (", \(key)")
+    //valueGroups[value] = key
     print(valueGroups)
 }
-
 
 /*for word in sentence.lowercased().split(separator: " ") {
     if wordCount.contains { $0.key == word } {
